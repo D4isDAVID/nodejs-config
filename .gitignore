@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Output
+dist/
+
+# Environment
+.env*
+!.env.example
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.zed/*
+!.zed/settings.json
+
+# OS
+.DS_Store

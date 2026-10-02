@@ -1,0 +1,59 @@
+{
+  "$schema": "https://www.schemastore.org/package.json",
+  "name": "@d4isdavid/config",
+  "version": "0.1.0",
+  "description": "Personal reusable configurations for anything Node.js.",
+  "homepage": "https://github.com/D4isDAVID/nodejs-config#readme",
+  "bugs": {
+    "url": "https://github.com/D4isDAVID/nodejs-config/issues"
+  },
+  "license": "MIT",
+  "author": "David Malchin <malchin459@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D4isDAVID/nodejs-config.git"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/D4isDAVID"
+  },
+  "files": [
+    "dist",
+    "tsconfig"
+  ],
+  "type": "module",
+  "exports": {
+    "./oxfmt/*": {
+      "import": "./dist/oxfmt/*.js",
+      "types": "./dist/oxfmt/*.d.ts"
+    },
+    "./oxlint/*": {
+      "import": "./dist/oxlint/*.js",
+      "types": "./dist/oxlint/*.d.ts"
+    },
+    "./tsconfig/*": {
+      "default": "./tsconfig/*.json"
+    }
+  },
+  "scripts": {
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "build": "rimraf dist && tsc --project tsconfig.config.json && tsc"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.71.0",
+    "oxlint": "^1.86.0",
+    "oxlint-tsgolint": "^7.0.2003",
+    "rimraf": "^6.1.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.8.1"
+    }
+  }
+}

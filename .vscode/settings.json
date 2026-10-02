@@ -1,0 +1,22 @@
+{
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.codeActionsOnSave": {
+    "source.format.oxc": "always",
+    "source.fixAll.oxc": "always"
+  },
+  "js/ts.preferences.importModuleSpecifierEnding": "js",
+  "oxc.enable": true,
+  "oxc.enable.oxfmt": true,
+  "oxc.enable.oxlint": true,
+  "[typescript][json][jsonc][markdown]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.codeActionsOnSave": {
+      "source.format.oxc": "always",
+      "source.fixAll.oxc": "always"
+    }
+  }
+}
