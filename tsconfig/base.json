@@ -13,7 +13,6 @@
 
     "rewriteRelativeImportExtensions": true,
 
-    "outDir": "${configDir}/dist",
     "sourceMap": true,
 
     "verbatimModuleSyntax": true,
