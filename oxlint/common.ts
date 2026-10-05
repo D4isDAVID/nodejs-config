@@ -242,7 +242,7 @@ export const oxlintCommonConfig: OxlintConfig = {
         'prefer-promise-reject-errors': ['error', { allowEmptyReject: false }],
         radix: ['error', 'always'],
         'require-await': 'error',
-        'require-unicode-regexp': ['error', { requireFlag: 'v' }],
+        'require-unicode-regexp': 'off', // unwanted
         'sort-vars': 'off', // unwanted
         'symbol-description': 'error',
         'import/max-dependencies': 'off', // unwanted
@@ -794,7 +794,7 @@ export const oxlintCommonConfig: OxlintConfig = {
         'import/no-named-as-default': 'error',
         'import/no-named-as-default-member': 'error',
         'import/no-self-import': 'error',
-        'import/no-unassigned-import': ['error', { allow: [] }],
+        'import/no-unassigned-import': 'off', // unwanted
         'oxc/approx-constant': 'error',
         'oxc/misrefactored-assign-op': 'error',
         'oxc/no-async-endpoint-handlers': ['off', { allowedNames: [] }],
