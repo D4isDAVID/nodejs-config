@@ -3,6 +3,8 @@
   "extends": ["./tsconfig/base.json", "./tsconfig/lib.json"],
   "compilerOptions": {
     "module": "esnext",
-    "rewriteRelativeImportExtensions": true
+    "rewriteRelativeImportExtensions": true,
+
+    "outDir": "./dist"
   }
 }
