@@ -411,7 +411,7 @@ export const oxlintCommonConfig: OxlintConfig = {
                 allowNamedExports: false,
                 classes: true,
                 enums: true,
-                functions: true,
+                functions: false,
                 ignoreTypeReferences: true,
                 typedefs: true,
                 variables: true,
@@ -595,7 +595,7 @@ export const oxlintCommonConfig: OxlintConfig = {
         ],
         'prefer-const': [
             'error',
-            { destructuring: 'any', ignoreReadBeforeAssign: false },
+            { destructuring: 'all', ignoreReadBeforeAssign: false },
         ],
         'prefer-destructuring': [
             'error',
@@ -631,7 +631,7 @@ export const oxlintCommonConfig: OxlintConfig = {
             'error',
             'prefer-top-level-if-only-type-imports',
         ],
-        'import/exports-last': 'error',
+        'import/exports-last': 'off', // unwanted
         'import/first': ['error', 'absolute-first'],
         'import/group-exports': 'off',
         'import/newline-after-import': [
@@ -652,7 +652,7 @@ export const oxlintCommonConfig: OxlintConfig = {
         'jsdoc/no-blank-blocks': ['error', { enableFixer: false }],
         'jsdoc/require-throws-description': 'error',
         'jsdoc/require-yields-description': 'error',
-        'promise/avoid-new': 'error',
+        'promise/avoid-new': 'off', // unwanted
         'promise/no-nesting': 'error',
         'promise/no-return-wrap': ['error', { allowReject: false }],
         'promise/param-names': [
@@ -678,7 +678,7 @@ export const oxlintCommonConfig: OxlintConfig = {
                 multipleFileExtensions: true,
             },
         ],
-        'unicorn/max-nested-calls': ['error', { max: 2 }],
+        'unicorn/max-nested-calls': ['error', { max: 3 }],
         'unicorn/no-array-method-this-argument': 'error',
         'unicorn/no-await-expression-member': 'error',
         'unicorn/no-console-spaces': 'error',
@@ -736,7 +736,7 @@ export const oxlintCommonConfig: OxlintConfig = {
         'unicorn/prefer-string-raw': 'error',
         'unicorn/prefer-string-trim-start-end': 'error',
         'unicorn/prefer-structured-clone': ['error', { functions: [] }],
-        'unicorn/prefer-ternary': ['error', 'only-single-line'],
+        'unicorn/prefer-ternary': 'off', // unwanted
         'unicorn/relative-url-style': ['error', 'always'],
         'unicorn/require-array-join-separator': 'error',
         'unicorn/require-module-attributes': 'error',
@@ -755,7 +755,7 @@ export const oxlintCommonConfig: OxlintConfig = {
             'error',
             {
                 allow: [],
-                builtinGlobals: true,
+                builtinGlobals: false,
                 hoist: 'functions-and-types',
                 ignoreFunctionTypeParameterNameValueShadow: true,
                 ignoreOnInitialization: false,
