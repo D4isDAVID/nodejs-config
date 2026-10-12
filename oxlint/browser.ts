@@ -1,6 +1,6 @@
 import type { OxlintConfig } from 'oxlint';
 
-export const oxlintNodeConfig: OxlintConfig = {
+export const oxlintBrowserConfig: OxlintConfig = {
     plugins: ['eslint', 'import', 'unicorn'],
     rules: {
         // Pedantic
