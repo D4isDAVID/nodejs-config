@@ -1,7 +1,7 @@
 import type { OxlintConfig } from 'oxlint';
 
 export const oxlintNodeConfig: OxlintConfig = {
-    plugins: ['unicorn'],
+    plugins: ['eslint', 'import', 'unicorn'],
     rules: {
         // Pedantic
         'unicorn/prefer-dom-node-append': 'error',

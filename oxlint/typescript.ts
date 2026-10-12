@@ -13,7 +13,7 @@ export const oxlintTypescriptConfig: OxlintConfig = {
         'typescript/no-base-to-string': [
             'error',
             {
-                checkUnknown: true,
+                checkUnknown: false,
                 ignoredTypeNames: ['Error', 'RegExp', 'URL', 'URLSearchParams'],
             },
         ],

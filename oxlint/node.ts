@@ -1,7 +1,7 @@
 import type { OxlintConfig } from 'oxlint';
 
 export const oxlintNodeConfig: OxlintConfig = {
-    plugins: ['node'],
+    plugins: ['node', 'unicorn'],
     rules: {
         // Pedantic
         'unicorn/prefer-event-target': 'off', // unwanted
